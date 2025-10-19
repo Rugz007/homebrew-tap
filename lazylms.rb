@@ -11,7 +11,7 @@ class Lazylms < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.1/lazylms_1.0.0-beta.1_darwin_amd64.tar.gz"
-      sha256 "d5f00bc6f61ff99c47e988b4373f69d562588ade98fe02a314a2f968ce2445c0"
+      sha256 "550fbff4a42d99d707ab612a407ef646068ad26567c98da5d6eafc72bef69d34"
 
       def install
         bin.install "lazylms"
@@ -19,7 +19,7 @@ class Lazylms < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.1/lazylms_1.0.0-beta.1_darwin_arm64.tar.gz"
-      sha256 "60ca5ab3f56ed707d53b4013ded897474d79eb6e28d0e3d3d11ec53268e9e000"
+      sha256 "9a10b9a9d6dab8add33d13756b32de5c8ea099b13a15a477a79b736c2df7592a"
 
       def install
         bin.install "lazylms"
@@ -30,14 +30,14 @@ class Lazylms < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.1/lazylms_1.0.0-beta.1_linux_amd64.tar.gz"
-      sha256 "83690d6f1ba43fb0f6f61d0c7f444223bb82a0bd590820f066a79a6ab99d768a"
+      sha256 "2c2b1398dea675a036bed94a79e660ee0f149983f80637ab4bdc1baa568501c1"
       def install
         bin.install "lazylms"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.1/lazylms_1.0.0-beta.1_linux_arm64.tar.gz"
-      sha256 "bcd4daf515749e96880ce7caf19ee2f22da6c86fbdec9ae2136896f904aa46cd"
+      sha256 "a073113b0e3a1b334b388257741aeec4a713287ca13a621ce73c8e44a8b806a7"
       def install
         bin.install "lazylms"
       end
