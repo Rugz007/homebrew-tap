@@ -5,21 +5,21 @@
 class Lazylms < Formula
   desc "A minimal TUI client for LM Studio"
   homepage "https://github.com/Rugz007/lazylms"
-  version "1.0.0-beta.5"
+  version "1.0.0-beta.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.5/lazylms_1.0.0-beta.5_darwin_amd64.tar.gz"
-      sha256 "34870e31411e2576180ca6d0eb320b702d94e3fded284bda2c69a09e284c0f7d"
+      url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.7/lazylms_1.0.0-beta.7_darwin_amd64.tar.gz"
+      sha256 "dc2f50523e98111e7c6bc277acfb7528d0fdbd93732139d2886f7921ad4fde29"
 
       def install
         bin.install "lazylms"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.5/lazylms_1.0.0-beta.5_darwin_arm64.tar.gz"
-      sha256 "7f5ed581823d9e3294fa6fe60042bf885d734458132452ff76963bb8eb21854f"
+      url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.7/lazylms_1.0.0-beta.7_darwin_arm64.tar.gz"
+      sha256 "65a6744fc2a66d95dd31b763c9db3dd364b46624338773c619d597365754dbf4"
 
       def install
         bin.install "lazylms"
@@ -29,15 +29,15 @@ class Lazylms < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.5/lazylms_1.0.0-beta.5_linux_amd64.tar.gz"
-      sha256 "7a86cf7f9b9aeb9f55bf7bc07905abf54058f3336027e0f631f1ea64bb5a5485"
+      url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.7/lazylms_1.0.0-beta.7_linux_amd64.tar.gz"
+      sha256 "4820bc8f2d8415bd7efc834948e7cb7021b113bf96bba3d834956fbd680de7f7"
       def install
         bin.install "lazylms"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.5/lazylms_1.0.0-beta.5_linux_arm64.tar.gz"
-      sha256 "ba937a885817709673fde1b3834a514521f118a336fce5c5b1846ecaf77a2aa6"
+      url "https://github.com/Rugz007/lazylms/releases/download/v1.0.0-beta.7/lazylms_1.0.0-beta.7_linux_arm64.tar.gz"
+      sha256 "4e66fd57a53e39c9606fcf03135647fb2ef4baff7a7e85bd7c680e8fe808d48d"
       def install
         bin.install "lazylms"
       end
